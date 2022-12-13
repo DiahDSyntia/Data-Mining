@@ -54,7 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Best Accuracy Between Normalization vs Unnomarlization (Tugas 9)" href="ensemblestacking.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -96,7 +95,7 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="_static/fotodiah.jpeg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Diah Dwi Syntia</h1>
@@ -121,11 +120,6 @@ const thebe_selector_output = ".output, .cell_output"
    <strong>
     Penambangan Data
    </strong>
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ensemblestacking.html">
-   Best Accuracy Between Normalization vs Unnomarlization  (Tugas 9)
   </a>
  </li>
 </ul>
@@ -665,8 +659,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#studi-kasus-dengan-kredit-score-tugas-10">
-   Studi Kasus Dengan Kredit Score - Tugas 10
+  <a class="reference internal nav-link" href="#tugas-10-ensemble-stacking">
+   Tugas 10 - Ensemble Stacking
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -675,16 +669,9 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#naive-bayes-classifier">
-     Naive bayes classifier
+    <a class="reference internal nav-link" href="#stacking">
+     Stacking
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#create-model-for-naive-bayes">
-       create model for Naive Bayes
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -1038,8 +1025,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#studi-kasus-dengan-kredit-score-tugas-10">
-   Studi Kasus Dengan Kredit Score - Tugas 10
+  <a class="reference internal nav-link" href="#tugas-10-ensemble-stacking">
+   Tugas 10 - Ensemble Stacking
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -1048,16 +1035,9 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#naive-bayes-classifier">
-     Naive bayes classifier
+    <a class="reference internal nav-link" href="#stacking">
+     Stacking
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#create-model-for-naive-bayes">
-       create model for Naive Bayes
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -1108,7 +1088,7 @@ with your book. For more information about this, see <a class="reference externa
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-781d766f-d5f6-418b-a4fd-bbc803187de2">
+  <div id="df-3c7469fc-cc93-4466-a2dd-bdd9e80317d2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1336,7 +1316,7 @@ with your book. For more information about this, see <a class="reference externa
 </table>
 <p>761 rows × 14 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-781d766f-d5f6-418b-a4fd-bbc803187de2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3c7469fc-cc93-4466-a2dd-bdd9e80317d2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1387,12 +1367,12 @@ with your book. For more information about this, see <a class="reference externa
 
       <script>
         const buttonEl =
-          document.querySelector('#df-781d766f-d5f6-418b-a4fd-bbc803187de2 button.colab-df-convert');
+          document.querySelector('#df-3c7469fc-cc93-4466-a2dd-bdd9e80317d2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-781d766f-d5f6-418b-a4fd-bbc803187de2');
+          const element = document.querySelector('#df-3c7469fc-cc93-4466-a2dd-bdd9e80317d2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1457,7 +1437,7 @@ with your book. For more information about this, see <a class="reference externa
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e9d8d15c-77d5-4419-88e1-aea8f94e1830">
+  <div id="df-c0dbd409-5b9b-411d-98a6-f16f64aba0dc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1553,7 +1533,7 @@ with your book. For more information about this, see <a class="reference externa
 </table>
 <p>15 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e9d8d15c-77d5-4419-88e1-aea8f94e1830')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c0dbd409-5b9b-411d-98a6-f16f64aba0dc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1604,12 +1584,12 @@ with your book. For more information about this, see <a class="reference externa
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e9d8d15c-77d5-4419-88e1-aea8f94e1830 button.colab-df-convert');
+          document.querySelector('#df-c0dbd409-5b9b-411d-98a6-f16f64aba0dc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e9d8d15c-77d5-4419-88e1-aea8f94e1830');
+          const element = document.querySelector('#df-c0dbd409-5b9b-411d-98a6-f16f64aba0dc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1672,7 +1652,7 @@ with your book. For more information about this, see <a class="reference externa
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-53909544-6c91-4e5c-bc1b-32eef1fdf104">
+  <div id="df-3439a892-ae72-4d7f-a365-766d1d756412">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1743,7 +1723,7 @@ with your book. For more information about this, see <a class="reference externa
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-53909544-6c91-4e5c-bc1b-32eef1fdf104')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3439a892-ae72-4d7f-a365-766d1d756412')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1794,12 +1774,12 @@ with your book. For more information about this, see <a class="reference externa
 
       <script>
         const buttonEl =
-          document.querySelector('#df-53909544-6c91-4e5c-bc1b-32eef1fdf104 button.colab-df-convert');
+          document.querySelector('#df-3439a892-ae72-4d7f-a365-766d1d756412 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-53909544-6c91-4e5c-bc1b-32eef1fdf104');
+          const element = document.querySelector('#df-3439a892-ae72-4d7f-a365-766d1d756412');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1863,7 +1843,7 @@ with your book. For more information about this, see <a class="reference externa
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4ab826a8-557f-4389-916c-3e43f65995dd">
+  <div id="df-f44336a0-3c11-40d5-baf9-a0c786ed8057">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1901,7 +1881,7 @@ with your book. For more information about this, see <a class="reference externa
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4ab826a8-557f-4389-916c-3e43f65995dd')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f44336a0-3c11-40d5-baf9-a0c786ed8057')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1952,12 +1932,12 @@ with your book. For more information about this, see <a class="reference externa
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4ab826a8-557f-4389-916c-3e43f65995dd button.colab-df-convert');
+          document.querySelector('#df-f44336a0-3c11-40d5-baf9-a0c786ed8057 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4ab826a8-557f-4389-916c-3e43f65995dd');
+          const element = document.querySelector('#df-f44336a0-3c11-40d5-baf9-a0c786ed8057');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1986,7 +1966,7 @@ with your book. For more information about this, see <a class="reference externa
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0dcb8948-7741-4fa2-b4f6-1f4423206c15">
+  <div id="df-a45e2c28-b949-4620-a235-e1f229e2a8a5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2044,7 +2024,7 @@ with your book. For more information about this, see <a class="reference externa
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0dcb8948-7741-4fa2-b4f6-1f4423206c15')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a45e2c28-b949-4620-a235-e1f229e2a8a5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2095,12 +2075,12 @@ with your book. For more information about this, see <a class="reference externa
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0dcb8948-7741-4fa2-b4f6-1f4423206c15 button.colab-df-convert');
+          document.querySelector('#df-a45e2c28-b949-4620-a235-e1f229e2a8a5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0dcb8948-7741-4fa2-b4f6-1f4423206c15');
+          const element = document.querySelector('#df-a45e2c28-b949-4620-a235-e1f229e2a8a5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2341,7 +2321,7 @@ sumber Data Bunga Iris</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d3ae0a01-862c-4f47-9931-661633ad8283">
+  <div id="df-a3ffe490-c2c8-425f-a88c-eeb4825c964d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2452,7 +2432,7 @@ sumber Data Bunga Iris</p>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d3ae0a01-862c-4f47-9931-661633ad8283')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a3ffe490-c2c8-425f-a88c-eeb4825c964d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2503,12 +2483,12 @@ sumber Data Bunga Iris</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d3ae0a01-862c-4f47-9931-661633ad8283 button.colab-df-convert');
+          document.querySelector('#df-a3ffe490-c2c8-425f-a88c-eeb4825c964d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d3ae0a01-862c-4f47-9931-661633ad8283');
+          const element = document.querySelector('#df-a3ffe490-c2c8-425f-a88c-eeb4825c964d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2610,7 +2590,7 @@ sumber Data Bunga Iris</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-ed71af24-6011-4c3f-8332-6041843ef3e1">
+  <div id="df-bc9b734b-3b4e-405a-9bfd-9b2f5eac00e2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2694,7 +2674,7 @@ sumber Data Bunga Iris</p>
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ed71af24-6011-4c3f-8332-6041843ef3e1')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bc9b734b-3b4e-405a-9bfd-9b2f5eac00e2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2745,12 +2725,12 @@ sumber Data Bunga Iris</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ed71af24-6011-4c3f-8332-6041843ef3e1 button.colab-df-convert');
+          document.querySelector('#df-bc9b734b-3b4e-405a-9bfd-9b2f5eac00e2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ed71af24-6011-4c3f-8332-6041843ef3e1');
+          const element = document.querySelector('#df-bc9b734b-3b4e-405a-9bfd-9b2f5eac00e2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2833,7 +2813,7 @@ Name: sepal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bcf7fe12-588b-4d50-bfc4-3302a07e6c81">
+  <div id="df-7cc3c78d-6743-479f-b221-4fd39be7baaa">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2917,7 +2897,7 @@ Name: sepal.width, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bcf7fe12-588b-4d50-bfc4-3302a07e6c81')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7cc3c78d-6743-479f-b221-4fd39be7baaa')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2968,12 +2948,12 @@ Name: sepal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bcf7fe12-588b-4d50-bfc4-3302a07e6c81 button.colab-df-convert');
+          document.querySelector('#df-7cc3c78d-6743-479f-b221-4fd39be7baaa button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bcf7fe12-588b-4d50-bfc4-3302a07e6c81');
+          const element = document.querySelector('#df-7cc3c78d-6743-479f-b221-4fd39be7baaa');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3057,7 +3037,7 @@ Name: petal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-14c4d675-b0f3-42e9-bcbb-355b68b341a9">
+  <div id="df-2143a46b-12db-45a7-918a-fbd087e1c76a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3141,7 +3121,7 @@ Name: petal.width, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-14c4d675-b0f3-42e9-bcbb-355b68b341a9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2143a46b-12db-45a7-918a-fbd087e1c76a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3192,12 +3172,12 @@ Name: petal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-14c4d675-b0f3-42e9-bcbb-355b68b341a9 button.colab-df-convert');
+          document.querySelector('#df-2143a46b-12db-45a7-918a-fbd087e1c76a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-14c4d675-b0f3-42e9-bcbb-355b68b341a9');
+          const element = document.querySelector('#df-2143a46b-12db-45a7-918a-fbd087e1c76a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3280,7 +3260,7 @@ Name: sepal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cfc146ca-4ef8-49e4-a7d4-2cc7b28ec79e">
+  <div id="df-38e8ab83-09be-4d01-a87c-fa9b9ee2cc90">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3364,7 +3344,7 @@ Name: sepal.length, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cfc146ca-4ef8-49e4-a7d4-2cc7b28ec79e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-38e8ab83-09be-4d01-a87c-fa9b9ee2cc90')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3415,12 +3395,12 @@ Name: sepal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cfc146ca-4ef8-49e4-a7d4-2cc7b28ec79e button.colab-df-convert');
+          document.querySelector('#df-38e8ab83-09be-4d01-a87c-fa9b9ee2cc90 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cfc146ca-4ef8-49e4-a7d4-2cc7b28ec79e');
+          const element = document.querySelector('#df-38e8ab83-09be-4d01-a87c-fa9b9ee2cc90');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3510,7 +3490,7 @@ pd.qcut(series, interval, label)</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2aa5660e-4cf3-4198-b3a4-6771f4e9d1a7">
+  <div id="df-f21fd1f1-59cd-4884-98eb-02bf8f2da527">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3594,7 +3574,7 @@ pd.qcut(series, interval, label)</p>
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2aa5660e-4cf3-4198-b3a4-6771f4e9d1a7')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f21fd1f1-59cd-4884-98eb-02bf8f2da527')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3645,12 +3625,12 @@ pd.qcut(series, interval, label)</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2aa5660e-4cf3-4198-b3a4-6771f4e9d1a7 button.colab-df-convert');
+          document.querySelector('#df-f21fd1f1-59cd-4884-98eb-02bf8f2da527 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2aa5660e-4cf3-4198-b3a4-6771f4e9d1a7');
+          const element = document.querySelector('#df-f21fd1f1-59cd-4884-98eb-02bf8f2da527');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3741,7 +3721,7 @@ Name: sepal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-59196e49-6a01-48c0-92fc-89ac0117a601">
+  <div id="df-e6b6c9df-7955-4b2b-b6a9-61f1245ca946">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -3825,7 +3805,7 @@ Name: sepal.width, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-59196e49-6a01-48c0-92fc-89ac0117a601')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e6b6c9df-7955-4b2b-b6a9-61f1245ca946')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -3876,12 +3856,12 @@ Name: sepal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-59196e49-6a01-48c0-92fc-89ac0117a601 button.colab-df-convert');
+          document.querySelector('#df-e6b6c9df-7955-4b2b-b6a9-61f1245ca946 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-59196e49-6a01-48c0-92fc-89ac0117a601');
+          const element = document.querySelector('#df-e6b6c9df-7955-4b2b-b6a9-61f1245ca946');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3973,7 +3953,7 @@ Name: petal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2f01b5b7-a42f-417c-b607-b66f9f27213e">
+  <div id="df-43da38cc-d101-4c70-8e74-0452735af23a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -4057,7 +4037,7 @@ Name: petal.width, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2f01b5b7-a42f-417c-b607-b66f9f27213e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-43da38cc-d101-4c70-8e74-0452735af23a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -4108,12 +4088,12 @@ Name: petal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2f01b5b7-a42f-417c-b607-b66f9f27213e button.colab-df-convert');
+          document.querySelector('#df-43da38cc-d101-4c70-8e74-0452735af23a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2f01b5b7-a42f-417c-b607-b66f9f27213e');
+          const element = document.querySelector('#df-43da38cc-d101-4c70-8e74-0452735af23a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -4197,7 +4177,7 @@ Name: sepal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-cd77f91d-52cd-4a04-af81-141118edce20">
+  <div id="df-ba36dceb-f4f2-4f20-90c4-82dd6f897cf3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -4281,7 +4261,7 @@ Name: sepal.length, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cd77f91d-52cd-4a04-af81-141118edce20')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ba36dceb-f4f2-4f20-90c4-82dd6f897cf3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -4332,12 +4312,12 @@ Name: sepal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cd77f91d-52cd-4a04-af81-141118edce20 button.colab-df-convert');
+          document.querySelector('#df-ba36dceb-f4f2-4f20-90c4-82dd6f897cf3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cd77f91d-52cd-4a04-af81-141118edce20');
+          const element = document.querySelector('#df-ba36dceb-f4f2-4f20-90c4-82dd6f897cf3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -4462,7 +4442,7 @@ Name: petal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8ea798c8-9827-4ba2-9868-d2adca50232e">
+  <div id="df-06215bab-1e78-4c2a-98e4-9c766124c4a2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -4546,7 +4526,7 @@ Name: petal.length, dtype: int64
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8ea798c8-9827-4ba2-9868-d2adca50232e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-06215bab-1e78-4c2a-98e4-9c766124c4a2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -4597,12 +4577,12 @@ Name: petal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8ea798c8-9827-4ba2-9868-d2adca50232e button.colab-df-convert');
+          document.querySelector('#df-06215bab-1e78-4c2a-98e4-9c766124c4a2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8ea798c8-9827-4ba2-9868-d2adca50232e');
+          const element = document.querySelector('#df-06215bab-1e78-4c2a-98e4-9c766124c4a2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -10087,7 +10067,7 @@ f1-score_Naive Bayes : 1.000
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2314ca88-c583-4c83-b562-95a3584dc61e">
+  <div id="df-81a73386-5c90-4986-9c32-fd44c85fe0e7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -10387,7 +10367,7 @@ f1-score_Naive Bayes : 1.000
 </table>
 <p>1151 rows × 20 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2314ca88-c583-4c83-b562-95a3584dc61e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-81a73386-5c90-4986-9c32-fd44c85fe0e7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -10438,12 +10418,12 @@ f1-score_Naive Bayes : 1.000
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2314ca88-c583-4c83-b562-95a3584dc61e button.colab-df-convert');
+          document.querySelector('#df-81a73386-5c90-4986-9c32-fd44c85fe0e7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2314ca88-c583-4c83-b562-95a3584dc61e');
+          const element = document.querySelector('#df-81a73386-5c90-4986-9c32-fd44c85fe0e7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -10637,14 +10617,2701 @@ accuracy of normalizatio data</p>
 <p>Random Forest</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/DiahDSyntia/Data-Mining/main/credit_score.csv&quot;</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-de2706f6-d8ac-45ee-8f7d-1f6dcb02d682">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>kode_kontrak</th>
+      <th>pendapatan_setahun_juta</th>
+      <th>kpr_aktif</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+      <th>rata_rata_overdue</th>
+      <th>risk_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>AGR-000001</td>
+      <td>295</td>
+      <td>YA</td>
+      <td>48</td>
+      <td>5</td>
+      <td>61 - 90 days</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>AGR-000011</td>
+      <td>271</td>
+      <td>YA</td>
+      <td>36</td>
+      <td>5</td>
+      <td>61 - 90 days</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>AGR-000030</td>
+      <td>159</td>
+      <td>TIDAK</td>
+      <td>12</td>
+      <td>0</td>
+      <td>0 - 30 days</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>AGR-000043</td>
+      <td>210</td>
+      <td>YA</td>
+      <td>12</td>
+      <td>3</td>
+      <td>46 - 60 days</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>AGR-000049</td>
+      <td>165</td>
+      <td>TIDAK</td>
+      <td>36</td>
+      <td>0</td>
+      <td>31 - 45 days</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-de2706f6-d8ac-45ee-8f7d-1f6dcb02d682')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-de2706f6-d8ac-45ee-8f7d-1f6dcb02d682 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-de2706f6-d8ac-45ee-8f7d-1f6dcb02d682');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_without_column_for_convert</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;kode_kontrak&#39;</span><span class="p">,</span><span class="s1">&#39;pendapatan_setahun_juta&#39;</span><span class="p">,</span><span class="s1">&#39;durasi_pinjaman_bulan&#39;</span><span class="p">,</span><span class="s1">&#39;jumlah_tanggungan&#39;</span><span class="p">,</span><span class="s1">&#39;risk_rating&#39;</span><span class="p">])</span>
+<span class="n">df_without_column_for_convert</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-886ae01b-5e09-46ea-af2e-e14907beeb67">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kode_kontrak</th>
+      <th>pendapatan_setahun_juta</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+      <th>risk_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AGR-000001</td>
+      <td>295</td>
+      <td>48</td>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGR-000011</td>
+      <td>271</td>
+      <td>36</td>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGR-000030</td>
+      <td>159</td>
+      <td>12</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGR-000043</td>
+      <td>210</td>
+      <td>12</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGR-000049</td>
+      <td>165</td>
+      <td>36</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-886ae01b-5e09-46ea-af2e-e14907beeb67')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-886ae01b-5e09-46ea-af2e-e14907beeb67 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-886ae01b-5e09-46ea-af2e-e14907beeb67');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_ratarata</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;rata_rata_overdue&#39;</span><span class="p">])</span>
+<span class="n">df_ratarata</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-e2645066-b2f1-44a8-a580-c4a7a93fc364">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0 - 30 days</th>
+      <th>31 - 45 days</th>
+      <th>46 - 60 days</th>
+      <th>61 - 90 days</th>
+      <th>&gt; 90 days</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e2645066-b2f1-44a8-a580-c4a7a93fc364')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-e2645066-b2f1-44a8-a580-c4a7a93fc364 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-e2645066-b2f1-44a8-a580-c4a7a93fc364');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_kpr_aktif</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;kpr_aktif&#39;</span><span class="p">])</span>
+<span class="n">df_kpr_aktif</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-b022a289-bccf-454e-95aa-610939af8c48">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TIDAK</th>
+      <th>YA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>898</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>899</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>900 rows × 2 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b022a289-bccf-454e-95aa-610939af8c48')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-b022a289-bccf-454e-95aa-610939af8c48 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-b022a289-bccf-454e-95aa-610939af8c48');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_without_column_for_convert</span><span class="p">,</span> <span class="n">df_kpr_aktif</span><span class="p">,</span><span class="n">df_ratarata</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_new</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-4d79fcc6-71c2-4f67-928c-a2d33a4d4408">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kode_kontrak</th>
+      <th>pendapatan_setahun_juta</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+      <th>risk_rating</th>
+      <th>TIDAK</th>
+      <th>YA</th>
+      <th>0 - 30 days</th>
+      <th>31 - 45 days</th>
+      <th>46 - 60 days</th>
+      <th>61 - 90 days</th>
+      <th>&gt; 90 days</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AGR-000001</td>
+      <td>295</td>
+      <td>48</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGR-000011</td>
+      <td>271</td>
+      <td>36</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGR-000030</td>
+      <td>159</td>
+      <td>12</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGR-000043</td>
+      <td>210</td>
+      <td>12</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGR-000049</td>
+      <td>165</td>
+      <td>36</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4d79fcc6-71c2-4f67-928c-a2d33a4d4408')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-4d79fcc6-71c2-4f67-928c-a2d33a4d4408 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-4d79fcc6-71c2-4f67-928c-a2d33a4d4408');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_risk_rating</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;risk_rating&#39;</span><span class="p">])</span>
+<span class="n">df_risk_rating</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-1068e2e6-02d2-4a98-9dd0-d1fba6ded7d1">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>risk_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1068e2e6-02d2-4a98-9dd0-d1fba6ded7d1')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-1068e2e6-02d2-4a98-9dd0-d1fba6ded7d1 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-1068e2e6-02d2-4a98-9dd0-d1fba6ded7d1');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_without_risk_rating</span><span class="o">=</span><span class="n">df_new</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;risk_rating&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_without_risk_rating</span><span class="p">,</span><span class="n">df_risk_rating</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_new2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-d2f6330d-c05b-49d2-ba5f-78c8c3643bc5">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kode_kontrak</th>
+      <th>pendapatan_setahun_juta</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+      <th>TIDAK</th>
+      <th>YA</th>
+      <th>0 - 30 days</th>
+      <th>31 - 45 days</th>
+      <th>46 - 60 days</th>
+      <th>61 - 90 days</th>
+      <th>&gt; 90 days</th>
+      <th>risk_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AGR-000001</td>
+      <td>295</td>
+      <td>48</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGR-000011</td>
+      <td>271</td>
+      <td>36</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGR-000030</td>
+      <td>159</td>
+      <td>12</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGR-000043</td>
+      <td>210</td>
+      <td>12</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGR-000049</td>
+      <td>165</td>
+      <td>36</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>AGR-010739</td>
+      <td>112</td>
+      <td>48</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>AGR-010744</td>
+      <td>120</td>
+      <td>48</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>AGR-010758</td>
+      <td>166</td>
+      <td>24</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>898</th>
+      <td>AGR-010775</td>
+      <td>196</td>
+      <td>48</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>899</th>
+      <td>AGR-010790</td>
+      <td>204</td>
+      <td>24</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>900 rows × 12 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d2f6330d-c05b-49d2-ba5f-78c8c3643bc5')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-d2f6330d-c05b-49d2-ba5f-78c8c3643bc5 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-d2f6330d-c05b-49d2-ba5f-78c8c3643bc5');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="n">df_for_minmax_scaler</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pendapatan_setahun_juta&#39;</span><span class="p">,</span><span class="s1">&#39;durasi_pinjaman_bulan&#39;</span><span class="p">,</span><span class="s1">&#39;jumlah_tanggungan&#39;</span><span class="p">])</span>
+<span class="n">df_for_minmax_scaler</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+<span class="n">df_hasil_minmax_scaler</span><span class="o">=</span><span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_for_minmax_scaler</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_hasil_minmax_scaler</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_hasil_minmax_scaler</span><span class="p">,</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pendapatan_setahun_juta&#39;</span><span class="p">,</span><span class="s1">&#39;durasi_pinjaman_bulan&#39;</span><span class="p">,</span><span class="s1">&#39;jumlah_tanggungan&#39;</span><span class="p">])</span>
+<span class="n">df_hasil_minmax_scaler</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-856f39c3-448b-4ece-9a18-efe63aec89ac">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>pendapatan_setahun_juta</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.978261</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.873913</td>
+      <td>0.666667</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.386957</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.608696</td>
+      <td>0.000000</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.413043</td>
+      <td>0.666667</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>0.182609</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>0.217391</td>
+      <td>1.000000</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>0.417391</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>898</th>
+      <td>0.547826</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>899</th>
+      <td>0.582609</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+    </tr>
+  </tbody>
+</table>
+<p>900 rows × 3 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-856f39c3-448b-4ece-9a18-efe63aec89ac')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-856f39c3-448b-4ece-9a18-efe63aec89ac button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-856f39c3-448b-4ece-9a18-efe63aec89ac');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_drop_column_for_minmaxscaler</span><span class="o">=</span><span class="n">df_new2</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;pendapatan_setahun_juta&#39;</span><span class="p">,</span><span class="s1">&#39;durasi_pinjaman_bulan&#39;</span><span class="p">,</span><span class="s1">&#39;jumlah_tanggungan&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_drop_column_for_minmaxscaler</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-24eec960-b5ca-484a-a219-cb48aee00490">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kode_kontrak</th>
+      <th>TIDAK</th>
+      <th>YA</th>
+      <th>0 - 30 days</th>
+      <th>31 - 45 days</th>
+      <th>46 - 60 days</th>
+      <th>61 - 90 days</th>
+      <th>&gt; 90 days</th>
+      <th>risk_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AGR-000001</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGR-000011</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGR-000030</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGR-000043</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGR-000049</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>AGR-010739</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>AGR-010744</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>AGR-010758</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>898</th>
+      <td>AGR-010775</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>899</th>
+      <td>AGR-010790</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>900 rows × 9 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-24eec960-b5ca-484a-a219-cb48aee00490')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-24eec960-b5ca-484a-a219-cb48aee00490 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-24eec960-b5ca-484a-a219-cb48aee00490');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_drop_column_for_minmaxscaler</span><span class="p">,</span><span class="n">df_hasil_minmax_scaler</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_new3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-9023bab7-3118-401b-bcdb-0e72f3afaf21">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kode_kontrak</th>
+      <th>TIDAK</th>
+      <th>YA</th>
+      <th>0 - 30 days</th>
+      <th>31 - 45 days</th>
+      <th>46 - 60 days</th>
+      <th>61 - 90 days</th>
+      <th>&gt; 90 days</th>
+      <th>risk_rating</th>
+      <th>pendapatan_setahun_juta</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AGR-000001</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.978261</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGR-000011</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.873913</td>
+      <td>0.666667</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGR-000030</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.386957</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGR-000043</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.608696</td>
+      <td>0.000000</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGR-000049</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.413043</td>
+      <td>0.666667</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>AGR-010739</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5</td>
+      <td>0.182609</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>AGR-010744</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.217391</td>
+      <td>1.000000</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>AGR-010758</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.417391</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>898</th>
+      <td>AGR-010775</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.547826</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>899</th>
+      <td>AGR-010790</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.582609</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+    </tr>
+  </tbody>
+</table>
+<p>900 rows × 12 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9023bab7-3118-401b-bcdb-0e72f3afaf21')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-9023bab7-3118-401b-bcdb-0e72f3afaf21 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-9023bab7-3118-401b-bcdb-0e72f3afaf21');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new3_without_risk_rating</span><span class="o">=</span><span class="n">df_new3</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;risk_rating&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_new3_without_risk_rating</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-cf6ada1a-598e-4dc6-816a-a126d45012ca">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kode_kontrak</th>
+      <th>TIDAK</th>
+      <th>YA</th>
+      <th>0 - 30 days</th>
+      <th>31 - 45 days</th>
+      <th>46 - 60 days</th>
+      <th>61 - 90 days</th>
+      <th>&gt; 90 days</th>
+      <th>pendapatan_setahun_juta</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AGR-000001</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.978261</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGR-000011</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.873913</td>
+      <td>0.666667</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGR-000030</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.386957</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGR-000043</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.608696</td>
+      <td>0.000000</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGR-000049</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.413043</td>
+      <td>0.666667</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>AGR-010739</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.182609</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>AGR-010744</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.217391</td>
+      <td>1.000000</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>AGR-010758</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.417391</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>898</th>
+      <td>AGR-010775</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.547826</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>899</th>
+      <td>AGR-010790</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.582609</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+    </tr>
+  </tbody>
+</table>
+<p>900 rows × 11 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cf6ada1a-598e-4dc6-816a-a126d45012ca')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-cf6ada1a-598e-4dc6-816a-a126d45012ca button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-cf6ada1a-598e-4dc6-816a-a126d45012ca');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_new4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_new3_without_risk_rating</span><span class="p">,</span><span class="n">df_risk_rating</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_new4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-837c7efe-6e8e-4416-99c3-dbd50e6997fe">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kode_kontrak</th>
+      <th>TIDAK</th>
+      <th>YA</th>
+      <th>0 - 30 days</th>
+      <th>31 - 45 days</th>
+      <th>46 - 60 days</th>
+      <th>61 - 90 days</th>
+      <th>&gt; 90 days</th>
+      <th>pendapatan_setahun_juta</th>
+      <th>durasi_pinjaman_bulan</th>
+      <th>jumlah_tanggungan</th>
+      <th>risk_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AGR-000001</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.978261</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGR-000011</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.873913</td>
+      <td>0.666667</td>
+      <td>0.833333</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGR-000030</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.386957</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGR-000043</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.608696</td>
+      <td>0.000000</td>
+      <td>0.500000</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGR-000049</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.413043</td>
+      <td>0.666667</td>
+      <td>0.000000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>AGR-010739</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.182609</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>896</th>
+      <td>AGR-010744</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.217391</td>
+      <td>1.000000</td>
+      <td>0.333333</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>897</th>
+      <td>AGR-010758</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.417391</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>898</th>
+      <td>AGR-010775</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.547826</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>899</th>
+      <td>AGR-010790</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.582609</td>
+      <td>0.333333</td>
+      <td>0.333333</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>900 rows × 12 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-837c7efe-6e8e-4416-99c3-dbd50e6997fe')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-837c7efe-6e8e-4416-99c3-dbd50e6997fe button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-837c7efe-6e8e-4416-99c3-dbd50e6997fe');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>Naive Bayes Classifier</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">make_scorer</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">,</span><span class="n">precision_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span> <span class="p">,</span><span class="n">precision_score</span><span class="p">,</span><span class="n">recall_score</span><span class="p">,</span><span class="n">f1_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">KFold</span><span class="p">,</span><span class="n">train_test_split</span><span class="p">,</span><span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="o">=</span><span class="n">df_new4</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:</span><span class="mi">11</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span><span class="o">=</span><span class="n">df_new4</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">11</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span><span class="o">=</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gaussian</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="n">gaussian</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">gaussian</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> 
+<span class="n">accuracy_nb</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">)</span><span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">acc_gaussian</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">gaussian</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">)</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">)</span>
+<span class="n">precision</span> <span class="o">=</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">)</span>
+<span class="n">recall</span> <span class="o">=</span>  <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">)</span>
+<span class="n">f1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Confusion matrix for Naive Bayes</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">cm</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;accuracy_Naive Bayes: </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">accuracy</span>)
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;precision_Naive Bayes: </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">precision</span>)
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;recall_Naive Bayes: </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">recall</span>)
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;f1-score_Naive Bayes : </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">f1</span>)
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Confusion matrix for Naive Bayes
+ [[69  0  0  0  0]
+ [ 0 49  0  0  0]
+ [ 0  0 84  0  0]
+ [ 0  0  0 36  0]
+ [ 0  0  0  0 32]]
+accuracy_Naive Bayes: 1.000
+precision_Naive Bayes: 1.000
+recall_Naive Bayes: 1.000
+f1-score_Naive Bayes : 1.000
+</pre></div>
+</div>
+</div>
+</div>
+<p>create model for Naive Bayes</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="c1"># save the model to disk</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;finalized_model.sav&#39;</span>
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">))</span>
+ 
+<span class="c1"># load the model from disk</span>
+<span class="n">loaded_model</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
+
+<span class="c1"># apply the whole pipeline to data</span>
+<span class="n">dataArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.582609</span><span class="p">,</span> <span class="mf">0.333333</span><span class="p">,</span> <span class="mf">0.333333</span><span class="p">]</span>
+<span class="n">pred</span> <span class="o">=</span> <span class="n">loaded_model</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="n">dataArray</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3]
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="studi-kasus-dengan-kredit-score-tugas-10">
-<h1>Studi Kasus Dengan Kredit Score - Tugas 10<a class="headerlink" href="#studi-kasus-dengan-kredit-score-tugas-10" title="Permalink to this headline">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="tugas-10-ensemble-stacking">
+<h1>Tugas 10 - Ensemble Stacking<a class="headerlink" href="#tugas-10-ensemble-stacking" title="Permalink to this headline">#</a></h1>
 <section id="preprocessing-data">
 <h2>Preprocessing data<a class="headerlink" href="#preprocessing-data" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
@@ -13261,134 +15928,87 @@ accuracy of normalizatio data</p>
 </div>
 </div>
 </div>
-</section>
-<section id="naive-bayes-classifier">
-<h2>Naive bayes classifier<a class="headerlink" href="#naive-bayes-classifier" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">make_scorer</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">,</span><span class="n">precision_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span> <span class="p">,</span><span class="n">precision_score</span><span class="p">,</span><span class="n">recall_score</span><span class="p">,</span><span class="n">f1_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">KFold</span><span class="p">,</span><span class="n">train_test_split</span><span class="p">,</span><span class="n">cross_val_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">StackingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="o">=</span><span class="n">df_new4</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:</span><span class="mi">11</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">y</span><span class="o">=</span><span class="n">df_new4</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">11</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span><span class="o">=</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(630, 10)
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gaussian</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">gaussian</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">gaussian</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> 
-<span class="n">accuracy_nb</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">)</span><span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">acc_gaussian</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">gaussian</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">)</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">)</span>
-<span class="n">precision</span> <span class="o">=</span><span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">)</span>
-<span class="n">recall</span> <span class="o">=</span>  <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">Y_pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">)</span>
-<span class="n">f1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">,</span><span class="n">average</span><span class="o">=</span><span class="s1">&#39;micro&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Confusion matrix for Naive Bayes</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">cm</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;accuracy_Naive Bayes: </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">accuracy</span>)
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;precision_Naive Bayes: </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">precision</span>)
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;recall_Naive Bayes: </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">recall</span>)
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;f1-score_Naive Bayes : </span><span class="si">%.3f</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">f1</span>)
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Confusion matrix for Naive Bayes
- [[69  0  0  0  0]
- [ 0 49  0  0  0]
- [ 0  0 84  0  0]
- [ 0  0  0 36  0]
- [ 0  0  0  0 32]]
-accuracy_Naive Bayes: 1.000
-precision_Naive Bayes: 1.000
-recall_Naive Bayes: 1.000
-f1-score_Naive Bayes : 1.000
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># clf = RandomForestClassifier(n_estimators=50)</span>
-<span class="c1"># clf.fit(X_train, y_train)</span>
-
-<span class="c1"># cm = confusion_matrix(y_test, Y_pred)</span>
-<span class="c1"># accuracy = accuracy_score(y_test,Y_pred)</span>
-<span class="c1"># precision =precision_score(y_test, Y_pred,average=&#39;micro&#39;)</span>
-<span class="c1"># recall =  recall_score(y_test, Y_pred,average=&#39;micro&#39;)</span>
-<span class="c1"># f1 = f1_score(y_test,Y_pred,average=&#39;micro&#39;)</span>
-<span class="c1"># print(&#39;Confusion matrix for randomForest\n&#39;,cm)</span>
-<span class="c1"># print(&#39;accuracy_randomForest: %.3f&#39; %accuracy)</span>
-<span class="c1"># print(&#39;precision_randomForest: %.3f&#39; %precision)</span>
-<span class="c1"># print(&#39;recall_randomForest: %.3f&#39; %recall)</span>
-<span class="c1"># print(&#39;f1-score_randomForest : %.3f&#39; %f1)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section id="create-model-for-naive-bayes">
-<h3>create model for Naive Bayes<a class="headerlink" href="#create-model-for-naive-bayes" title="Permalink to this headline">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
-<span class="kn">import</span> <span class="nn">pickle</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="c1"># save the model to disk</span>
-<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;finalized_model.sav&#39;</span>
-<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">))</span>
- 
-<span class="c1"># load the model from disk</span>
-<span class="n">loaded_model</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>
-
-<span class="c1"># apply the whole pipeline to data</span>
-<span class="n">dataArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.582609</span><span class="p">,</span> <span class="mf">0.333333</span><span class="p">,</span> <span class="mf">0.333333</span><span class="p">]</span>
-<span class="n">pred</span> <span class="o">=</span> <span class="n">loaded_model</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="n">dataArray</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/DiahDSyntia/Data-Mining/main/credit_score.csv&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
+<section id="stacking">
+<h2>Stacking<a class="headerlink" href="#stacking" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">LinearSVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">StackingClassifier</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a Randomforest classifier</span>
+<span class="n">forest</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+                                <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
+
+<span class="c1"># Create a XGBoost classifier</span>
+<span class="n">boost</span> <span class="o">=</span> <span class="n">XGBClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">use_label_encoder</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Create a Logistic regression classifier</span>
+
+<span class="n">knnclassifier</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Create a stacking classifier</span>
+
+<span class="n">estimators</span> <span class="o">=</span> <span class="p">[</span>
+     <span class="p">(</span><span class="s1">&#39;rf&#39;</span><span class="p">,</span> <span class="n">forest</span><span class="p">),</span>
+     <span class="p">(</span><span class="s1">&#39;xgb&#39;</span><span class="p">,</span> <span class="n">boost</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">sclf</span> <span class="o">=</span> <span class="n">StackingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="n">estimators</span><span class="p">,</span>
+                            <span class="n">final_estimator</span><span class="o">=</span><span class="n">knnclassifier</span><span class="p">,</span>
+                            <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Fit the random forest classifier; Print the scores</span>
+
+<span class="n">forest</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Random forest model training Accuracy: </span><span class="si">{</span><span class="n">forest</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="si">:</span><span class="s2">0.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Random forest model test Accuracy: </span><span class="si">{</span><span class="n">forest</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span><span class="si">:</span><span class="s2">0.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Fit the XGBoost classifier; Print the scores</span>
+
+<span class="n">boost</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">XGBoost model training Accuracy: </span><span class="si">{</span><span class="n">boost</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="si">:</span><span class="s2">0.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;XGBoost model test Accuracy: </span><span class="si">{</span><span class="n">boost</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span><span class="si">:</span><span class="s2">0.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Fit the Stacking classifier; Print the scores</span>
+
+<span class="n">sclf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Stacking classifier training Accuracy: </span><span class="si">{</span><span class="n">sclf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="si">:</span><span class="s2">0.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Stacking classifier test Accuracy: </span><span class="si">{</span><span class="n">sclf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span><span class="si">:</span><span class="s2">0.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
@@ -13425,13 +16045,6 @@ f1-score_Naive Bayes : 1.000
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Welcome to your Jupyter Book</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="ensemblestacking.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Best Accuracy Between Normalization vs Unnomarlization  (Tugas 9)</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
