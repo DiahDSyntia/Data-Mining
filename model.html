@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>baca dataset &#8212; Diah Dwi Syntia</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -117,6 +116,11 @@ const thebe_selector_output = ".output, .cell_output"
    <strong>
     Penambangan Data
    </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas1tweet.html">
+   Tugas 1 - Tweet
   </a>
  </li>
 </ul>
@@ -416,7 +420,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="baca-dataset">
+<div class="tex2jax_ignore mathjax_ignore section" id="baca-dataset">
 <h1>baca dataset<a class="headerlink" href="#baca-dataset" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -427,7 +431,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-5d0e9355-e233-4b91-9c8d-4b4ac368f195">
+  <div id="df-3a18a7b7-87b5-4c1c-8ae0-57886641ba85">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -534,7 +538,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5d0e9355-e233-4b91-9c8d-4b4ac368f195')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3a18a7b7-87b5-4c1c-8ae0-57886641ba85')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -585,12 +589,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5d0e9355-e233-4b91-9c8d-4b4ac368f195 button.colab-df-convert');
+          document.querySelector('#df-3a18a7b7-87b5-4c1c-8ae0-57886641ba85 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5d0e9355-e233-4b91-9c8d-4b4ac368f195');
+          const element = document.querySelector('#df-3a18a7b7-87b5-4c1c-8ae0-57886641ba85');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -611,8 +615,8 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="pemisahan-data">
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="pemisahan-data">
 <h1>Pemisahan Data<a class="headerlink" href="#pemisahan-data" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -696,8 +700,8 @@ Jumlah Data Uji: 174
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="pemodelan-dengan-knn">
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="pemodelan-dengan-knn">
 <h1>Pemodelan Dengan KNN<a class="headerlink" href="#pemodelan-dengan-knn" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -714,8 +718,8 @@ Jumlah Data Uji: 174
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="prediksi-hasil">
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="prediksi-hasil">
 <h1>Prediksi Hasil<a class="headerlink" href="#prediksi-hasil" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -725,14 +729,14 @@ Jumlah Data Uji: 174
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1,
-       1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1,
-       1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2,
-       1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 2, 1,
-       1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1,
-       1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2,
-       1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1,
-       1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1,
+       1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 2,
+       2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1,
+       1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1,
+       1, 1, 2, 1, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 2,
+       1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1,
+       1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1,
+       1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 2])
 </pre></div>
 </div>
 </div>
@@ -754,7 +758,7 @@ Jumlah Data Uji: 174
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-71f034e3-6b10-4fdc-9906-61b3382b6626">
+  <div id="df-4717f64f-a178-47ff-a298-1f92bca2d92c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -781,23 +785,23 @@ Jumlah Data Uji: 174
   <tbody>
     <tr>
       <th>0</th>
-      <td>1</td>
       <td>2</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
       <td>2</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>1</td>
-      <td>1</td>
+      <td>2</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>3</th>
       <td>1</td>
-      <td>1</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>4</th>
@@ -827,18 +831,18 @@ Jumlah Data Uji: 174
     <tr>
       <th>172</th>
       <td>2</td>
-      <td>1</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>173</th>
       <td>1</td>
-      <td>1</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
 <p>174 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-71f034e3-6b10-4fdc-9906-61b3382b6626')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4717f64f-a178-47ff-a298-1f92bca2d92c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -889,12 +893,12 @@ Jumlah Data Uji: 174
 
       <script>
         const buttonEl =
-          document.querySelector('#df-71f034e3-6b10-4fdc-9906-61b3382b6626 button.colab-df-convert');
+          document.querySelector('#df-4717f64f-a178-47ff-a298-1f92bca2d92c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-71f034e3-6b10-4fdc-9906-61b3382b6626');
+          const element = document.querySelector('#df-4717f64f-a178-47ff-a298-1f92bca2d92c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -915,8 +919,8 @@ Jumlah Data Uji: 174
   </div>
 </div></div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="pengukuran-permormance">
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="pengukuran-permormance">
 <h1>Pengukuran Permormance<a class="headerlink" href="#pengukuran-permormance" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -931,7 +935,7 @@ Jumlah Data Uji: 174
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-58db9b6f-9abe-4eda-8052-1a412ca26e51">
+  <div id="df-04010cf8-e2af-496d-8a2e-7c00f537466b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -964,118 +968,118 @@ Jumlah Data Uji: 174
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.002787</td>
-      <td>0.005025</td>
-      <td>0.500000</td>
-      <td>0.865385</td>
-      <td>0.727273</td>
-      <td>0.867769</td>
-      <td>0.571429</td>
-      <td>0.954545</td>
+      <td>0.002720</td>
+      <td>0.006210</td>
+      <td>0.611111</td>
+      <td>0.858974</td>
+      <td>0.588235</td>
+      <td>0.892857</td>
+      <td>1.000000</td>
+      <td>0.909091</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0.002462</td>
-      <td>0.007490</td>
-      <td>0.666667</td>
+      <td>0.003464</td>
+      <td>0.005943</td>
+      <td>0.555556</td>
       <td>0.852564</td>
-      <td>0.705882</td>
-      <td>0.860656</td>
-      <td>0.923077</td>
-      <td>0.945946</td>
+      <td>0.692308</td>
+      <td>0.881818</td>
+      <td>0.692308</td>
+      <td>0.906542</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0.002650</td>
-      <td>0.004999</td>
-      <td>0.833333</td>
+      <td>0.002305</td>
+      <td>0.003912</td>
+      <td>0.444444</td>
       <td>0.858974</td>
-      <td>0.857143</td>
-      <td>0.880342</td>
-      <td>0.923077</td>
-      <td>0.927928</td>
+      <td>0.555556</td>
+      <td>0.884956</td>
+      <td>0.454545</td>
+      <td>0.917431</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.002580</td>
-      <td>0.004858</td>
+      <td>0.001938</td>
+      <td>0.003610</td>
+      <td>0.611111</td>
+      <td>0.826923</td>
+      <td>0.583333</td>
+      <td>0.868421</td>
       <td>0.777778</td>
-      <td>0.833333</td>
-      <td>0.857143</td>
-      <td>0.850000</td>
-      <td>0.857143</td>
-      <td>0.927273</td>
+      <td>0.891892</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0.002408</td>
-      <td>0.004392</td>
-      <td>0.647059</td>
+      <td>0.002455</td>
+      <td>0.004087</td>
+      <td>0.470588</td>
       <td>0.840764</td>
-      <td>0.642857</td>
-      <td>0.873950</td>
-      <td>0.900000</td>
-      <td>0.912281</td>
+      <td>0.666667</td>
+      <td>0.886792</td>
+      <td>0.615385</td>
+      <td>0.878505</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0.002379</td>
-      <td>0.004399</td>
-      <td>0.647059</td>
-      <td>0.847134</td>
-      <td>0.714286</td>
-      <td>0.866667</td>
-      <td>0.833333</td>
-      <td>0.928571</td>
+      <td>0.002453</td>
+      <td>0.004278</td>
+      <td>0.882353</td>
+      <td>0.821656</td>
+      <td>1.000000</td>
+      <td>0.862385</td>
+      <td>0.846154</td>
+      <td>0.878505</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>0.002659</td>
-      <td>0.004347</td>
-      <td>0.823529</td>
-      <td>0.840764</td>
-      <td>0.812500</td>
-      <td>0.846774</td>
-      <td>1.000000</td>
-      <td>0.945946</td>
+      <td>0.002208</td>
+      <td>0.004440</td>
+      <td>0.705882</td>
+      <td>0.847134</td>
+      <td>0.900000</td>
+      <td>0.895238</td>
+      <td>0.692308</td>
+      <td>0.878505</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>0.002559</td>
-      <td>0.004900</td>
-      <td>0.764706</td>
-      <td>0.840764</td>
-      <td>0.818182</td>
+      <td>0.002102</td>
+      <td>0.003712</td>
+      <td>0.882353</td>
+      <td>0.834395</td>
       <td>0.866667</td>
-      <td>0.818182</td>
-      <td>0.920354</td>
+      <td>0.852174</td>
+      <td>1.000000</td>
+      <td>0.915888</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>0.002731</td>
-      <td>0.007497</td>
-      <td>0.647059</td>
-      <td>0.847134</td>
-      <td>0.909091</td>
-      <td>0.863248</td>
-      <td>0.666667</td>
-      <td>0.926606</td>
+      <td>0.002085</td>
+      <td>0.003728</td>
+      <td>0.588235</td>
+      <td>0.853503</td>
+      <td>0.714286</td>
+      <td>0.896226</td>
+      <td>0.769231</td>
+      <td>0.887850</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>0.002379</td>
-      <td>0.004007</td>
-      <td>0.529412</td>
-      <td>0.872611</td>
-      <td>0.555556</td>
-      <td>0.899160</td>
-      <td>0.555556</td>
-      <td>0.930435</td>
+      <td>0.002005</td>
+      <td>0.003697</td>
+      <td>0.647059</td>
+      <td>0.828025</td>
+      <td>0.875000</td>
+      <td>0.871560</td>
+      <td>0.583333</td>
+      <td>0.879630</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-58db9b6f-9abe-4eda-8052-1a412ca26e51')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-04010cf8-e2af-496d-8a2e-7c00f537466b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1126,12 +1130,12 @@ Jumlah Data Uji: 174
 
       <script>
         const buttonEl =
-          document.querySelector('#df-58db9b6f-9abe-4eda-8052-1a412ca26e51 button.colab-df-convert');
+          document.querySelector('#df-04010cf8-e2af-496d-8a2e-7c00f537466b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-58db9b6f-9abe-4eda-8052-1a412ca26e51');
+          const element = document.querySelector('#df-04010cf8-e2af-496d-8a2e-7c00f537466b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1168,9 +1172,9 @@ Jumlah Data Uji: 174
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PERFORMANCE MODEL KNN
-Accuracy: 68.37 %
-Precision: 76.00 %
-Recall: 80.48 %
+Accuracy: 63.99 %
+Precision: 74.42 %
+Recall: 74.31 %
 </pre></div>
 </div>
 </div>
@@ -1190,7 +1194,7 @@ Recall: 80.48 %
 </div>
 </div>
 </div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1204,7 +1208,7 @@ Recall: 80.48 %
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true

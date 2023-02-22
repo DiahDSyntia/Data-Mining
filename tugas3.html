@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tugas 3 &#8212; Diah Dwi Syntia</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -117,6 +116,11 @@ const thebe_selector_output = ".output, .cell_output"
    <strong>
     Penambangan Data
    </strong>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas1tweet.html">
+   Tugas 1 - Tweet
   </a>
  </li>
 </ul>
@@ -388,9 +392,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-3">
 <h1>Tugas 3<a class="headerlink" href="#tugas-3" title="Permalink to this headline">#</a></h1>
-<section id="implementasi-k-nn-pada-database-iris">
+<div class="section" id="implementasi-k-nn-pada-database-iris">
 <h2>Implementasi K-NN Pada database Iris<a class="headerlink" href="#implementasi-k-nn-pada-database-iris" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -426,7 +430,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f5fc8276-aec2-4fbb-bec3-8daf142864ae">
+  <div id="df-1b7c3e3e-f4d1-44df-b82c-69d770f8585b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -497,7 +501,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f5fc8276-aec2-4fbb-bec3-8daf142864ae')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1b7c3e3e-f4d1-44df-b82c-69d770f8585b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -548,12 +552,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f5fc8276-aec2-4fbb-bec3-8daf142864ae button.colab-df-convert');
+          document.querySelector('#df-1b7c3e3e-f4d1-44df-b82c-69d770f8585b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f5fc8276-aec2-4fbb-bec3-8daf142864ae');
+          const element = document.querySelector('#df-1b7c3e3e-f4d1-44df-b82c-69d770f8585b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -574,7 +578,7 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
-<section id="memisahkan-features-dan-label">
+<div class="section" id="memisahkan-features-dan-label">
 <h3>Memisahkan Features dan Label<a class="headerlink" href="#memisahkan-features-dan-label" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -604,8 +608,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-<section id="standarisasi">
+</div>
+<div class="section" id="standarisasi">
 <h3>Standarisasi<a class="headerlink" href="#standarisasi" title="Permalink to this headline">#</a></h3>
 <p>Algoritma KNN menggunakan metrik jarak (Euclidean), sehingga memiliki data yang terdistribusi merata khususnya pada distribusi normal akan meningkatkan performa model KNN ini. Maka dari itu diperlukan proses standarisasi data.</p>
 <div class="cell docutils container">
@@ -683,9 +687,9 @@ weighted avg       1.00      1.00      1.00        30
 </div>
 </div>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -699,7 +703,7 @@ weighted avg       1.00      1.00      1.00        30
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
